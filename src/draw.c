@@ -6,7 +6,7 @@
 /*   By: wyholger <wyholger@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/28 16:38:34 by wyholger          #+#    #+#             */
-/*   Updated: 2021/10/06 19:28:58 by wyholger         ###   ########.fr       */
+/*   Updated: 2021/10/21 22:43:25 by wyholger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,11 @@ void	draw_line(t_data *data, t_list *x_y, t_list *x1_y1)
 {
 	if (x_y->x_t > 0 && x_y->y_t > 0 && x_y->x_t < 2300 && x_y->y_t < 1800)
 	{
-		if (data->index.max_z == data->index.min_z)
-		{
+		if (data->index.max_z == data->index.min_z && x_y->color == 0)
 			x_y->color = 0xffffff;
+		else if (data->index.max_z == data->index.min_z && x1_y1->color == 0)
 			x1_y1->color = 0xffffff;
-		}
-		else
+		else if (data->index.max_z != data->index.min_z)
 			color_for_no_set_color(data, x_y, x1_y1);
 		r_g_b_init(data, x_y, x1_y1);
 		color_step_init(data, x_y, x1_y1);
