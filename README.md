@@ -4,7 +4,9 @@ FdF это мой первый графический проект. Написа
 ```
 git clone https://github.com/wyholger/FdF.git FdF
 ```
+```
 cd FdF
+```
 ```
 make
 ```
