@@ -33,7 +33,7 @@ cat test_maps/mi.fdf
 ./fdf test_maps/mi.fdf
 ```
 ![mi](https://github.com/wyholger/FdF/blob/main/gif/Screen_Shot_2.png?raw=true)
-Где за координатой после запятой следует номер цвета в виде 16-ти ричного числа 10,0xffffff или 10,0xFFFFFF (первая пара символов отвечает за R, вторая за G, третья за B)
+Где за координатой после запятой следует номер цвета в виде 16-ти ричного числа 10,0xffffff или 10,0xFFFFFF (первая пара символов отвечает за значение R, вторая за G, третья за B)
 ## Сборка на macOS
 ```
 git clone https://github.com/wyholger/FdF.git FdF
